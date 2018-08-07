@@ -73,7 +73,7 @@ launchctl load $PLISTLOC
 $DOCKUTILLOC --add /Applications/Privileges.app
 
 exit 0</string>
-			<key>postinstall_script</key>
+			<key>postuninstall_script</key>
 			<string>#!/bin/bash
 
 SCRIPTID="privileges.helper"
