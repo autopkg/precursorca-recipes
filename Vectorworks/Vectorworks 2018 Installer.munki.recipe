@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Vectorworks 2018 Installer and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>precursorca.girhub.com.munki.Vectorworks2018Installer</string>
+	<string>com.github.precursorca.munki.Vectorworks2018Installer</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
@@ -84,7 +84,7 @@ rm -rf '/private/tmp/Vectorworks 2018 Installer.app'</string>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>precursorca.girhub.com.download.Vectorworks2018Installer</string>
+	<string>com.github.precursorca.download.Vectorworks2018Installer</string>
 	<key>Process</key>
 	<array>
 		<dict>

@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Vectorworks 2018 Installer.</string>
 	<key>Identifier</key>
-	<string>precursorca.girhub.com.download.Vectorworks2018Installer</string>
+	<string>com.github.precursorca.download.Vectorworks2018Installer</string>
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
