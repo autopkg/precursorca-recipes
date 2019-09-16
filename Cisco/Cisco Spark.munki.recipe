@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Cisco Spark and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>precursorca.girhub.com.munki.CiscoSpark</string>
+	<string>com.github.precursorca.munki.CiscoSpark</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
@@ -37,7 +37,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>precursorca.girhub.com.download.CiscoSpark</string>
+	<string>com.github.precursorca.download.CiscoSpark</string>
 	<key>Process</key>
 	<array>
 		<dict>

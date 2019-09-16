@@ -49,7 +49,7 @@ cp /Applications/Privileges.app/Contents/Library/LaunchServices/corp.sap.privile
 # create launchdaemon plist
 SCRIPTID="privileges.helper"
 MY_DOMAIN_REVERSE="corp.sap"
-PLISTBUDDYLOC="/usr/libexec/plistbuddy"  
+PLISTBUDDYLOC="/usr/libexec/plistbuddy"
 PLISTNAME="${MY_DOMAIN_REVERSE}.${SCRIPTID}"
 PLISTLOC="/Library/LaunchDaemons/${PLISTNAME}.plist"
 DOCKUTILLOC="/usr/local/bin/dockutil"
@@ -78,7 +78,7 @@ exit 0</string>
 
 SCRIPTID="privileges.helper"
 MY_DOMAIN_REVERSE="corp.sap"
-PLISTBUDDYLOC="/usr/libexec/plistbuddy"  
+PLISTBUDDYLOC="/usr/libexec/plistbuddy"
 PLISTNAME="${MY_DOMAIN_REVERSE}.${SCRIPTID}"
 PLISTLOC="/Library/LaunchDaemons/${PLISTNAME}.plist"
 DOCKUTILLOC="/usr/local/bin/dockutil"
@@ -97,7 +97,7 @@ $DOCKUTILLOC --remove /Applications/Privileges.app
 
 exit 0</string>
 		</dict>
-	</dict>   
+	</dict>
     <key>ParentRecipe</key>
     <string>com.github.rtrouton.pkg.privileges</string>
     <key>Process</key>
@@ -114,5 +114,3 @@ exit 0</string>
 	</array>
 </dict>
 </plist>
-
-
