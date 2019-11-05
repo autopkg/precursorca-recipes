@@ -24,6 +24,18 @@
 			<string>The Viewer is a FREE value-added benefit to Vectorworks 2020 users. The Viewer enables those who do not own the program to look at and print projects created in Vectorworks 2020. And, it allows on-line collaboration between designers and clients during the creative process. Please note that the version 2020 Viewer allows users to view Vectorworks versions 9 through 2019 files as well.</string>
 			<key>developer</key>
 			<string>Vectorworks, Inc.</string>
+			<key>installcheck_script</key>
+			<string>#!/bin/sh
+
+# Specify the app we are looking for  (app = -d)  (file = -f)
+FILE="/Applications/Vectorworks 2020 Viewer/Vectorworks Viewer 2020.app"
+
+# Test for the file/app
+f [ -d "$FILE" ]; then
+    exit 0
+else
+    exit 1
+fi</string>	
 			<key>display_name</key>
 			<string>Vectorworks 2020 Installer</string>
 			<key>name</key>
@@ -44,7 +56,7 @@
 					<key>CFBundleVersion</key>
 					<string>23.0.0.23.0.0</string>
 					<key>minosversion</key>
-					<string>10.9.0</string>
+					<string>10.11.0</string>
 					<key>path</key>
 					<string>/Applications/Vectorworks 2020 Viewer/Vectorworks Viewer 2020.app</string>
 					<key>type</key>
@@ -63,7 +75,7 @@
 				</dict>
 			</array>
 			<key>minimum_os_version</key>
-			<string>10.10</string>
+			<string>10.11</string>
 			<key>name</key>
 			<string>Vectorworks 2020 Viewer</string>
 			<key>postinstall_script</key>
