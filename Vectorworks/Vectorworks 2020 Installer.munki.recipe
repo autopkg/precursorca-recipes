@@ -31,7 +31,7 @@
 FILE="/Applications/Vectorworks 2020 Viewer/Vectorworks Viewer 2020.app"
 
 # Test for the file/app
-f [ -d "$FILE" ]; then
+if [ -d "$FILE" ]; then
     exit 0
 else
     exit 1
