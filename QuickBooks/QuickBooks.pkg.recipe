@@ -10,8 +10,6 @@
 	<string>com.github.precursorca.pkg.QuickBooks</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>com.intuit.QBOClient</string>
 		<key>NAME</key>
 		<string>QuickBooks</string>
 	</dict>
