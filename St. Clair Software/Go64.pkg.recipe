@@ -10,8 +10,6 @@
 	<string>com.github.precursorca.pkg.Go64</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>com.stclairsoft.Go64</string>
 		<key>NAME</key>
 		<string>Go64</string>
 	</dict>
