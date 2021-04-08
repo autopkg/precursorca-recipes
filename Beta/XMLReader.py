@@ -76,4 +76,4 @@
 
  if __name__ == '__main__':
      PROCESSOR = XMLReader()
-     PROCESSOR.execute_shell() 
+     PROCESSOR.execute_shell()
