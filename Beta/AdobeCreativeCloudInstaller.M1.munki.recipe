@@ -23,7 +23,7 @@
     <key>Input</key>
     <dict>
       <key>MUNKI_REPO_SUBDIR</key>
-      <string>Adobe</string>
+      <string>apps/Adobe</string>
       <key>NAME</key>
       <string>Creative Cloud Installer</string>
       <key>pkginfo</key>
@@ -35,7 +35,7 @@
         <key>category</key>
         <string>Creative Cloud</string>
         <key>description</key>
-        <string>This installs the Creative Cloud app (Arm) that runs in your taskbar.</string>
+        <string>This installs the Creative Cloud app (Arm) that runs in your taskbar and allows you to install and update Creative Cloud apps.</string>
         <key>developer</key>
         <string>Adobe</string>
         <key>display_name</key>
