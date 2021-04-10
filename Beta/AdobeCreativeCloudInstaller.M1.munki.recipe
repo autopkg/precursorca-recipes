@@ -2,30 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
-    <key>Attribution</key>
-    <dict>
-      <key>Copyright</key>
-      <string>University of Oxford 2016</string>
-      <key>Author</key>
-      <dict>
-        <key>Name</key>
-        <string>Ben Goodstein</string>
-        <key>Email</key>
-        <string>ben.goodstein at it.ox.ac.uk</string>
-        <key>Github</key>
-        <string>fuzzylogiq</string>
-      </dict>
-    </dict>
     <key>Description</key>
-    <string>Testing Rich Trouton, ramyhhh, and Orchard recipes for use with CC for M1 - </string>
+    <string>Testing combination of Rich Trouton, ramyhhh, and Orchard recipes for use with CC for M1 - </string>
     <key>Identifier</key>
-    <string>com.github.precursorca.munki.AdobeCreativeCloudInstaller.M1</string>
+ 	<string>com.github.precursorca.munki.AdobeCreativeCloudInstaller.M1</string>
     <key>Input</key>
     <dict>
       <key>MUNKI_REPO_SUBDIR</key>
       <string>apps/Adobe</string>
       <key>NAME</key>
-      <string>Creative Cloud Installer</string>
+      <string>Creative Cloud Installer M1</string>
       <key>pkginfo</key>
       <dict>
         <key>catalogs</key>
@@ -33,7 +19,7 @@
           <string>testing</string>
         </array>
         <key>category</key>
-        <string>Creative Cloud</string>
+        <string>Creativity</string>
         <key>description</key>
         <string>This installs the Creative Cloud app (Arm) that runs in your taskbar and allows you to install and update Creative Cloud apps.</string>
         <key>developer</key>
