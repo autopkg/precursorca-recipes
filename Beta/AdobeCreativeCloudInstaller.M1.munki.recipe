@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Testing combination of Rich Trouton, ramyhhh, and Orchard recipes for use with CC for M1 - </string>
+    <string>Testing combination of Rich Trouton, ramyhhh, and Orchard recipes for use with CC for M1</string>
     <key>Identifier</key>
  	<string>com.github.precursorca.munki.AdobeCreativeCloudInstaller.M1</string>
     <key>Input</key>
