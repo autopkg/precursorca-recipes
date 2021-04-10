@@ -36,7 +36,7 @@
 # Script to create a serviceconfig.xml file to allow standard users to update Creative Cloud and install Apps
 
 OUTPUT_FILE="/Library/Application Support/Adobe/OOBE/Configs/ServiceConfig.xml"
-CONTENTS="<config><panel><name>AppsPanel</name><visible>true</visible></panel><panel><name>FilesPanel</name><masked>false</masked></panel><panel><name>MarketPanel</name><masked>false</masked></panel><feature><name>SelfServeInstalls</name><enabled>true</enabled></feature><feature><name>BrowserBasedAuthentication</name><enabled>false</enabled></feature><feature><name>SelfServePluginsInstall</name><enabled>true</enabled></feature><feature><name>AppsAutoUpdate</name><enabled>true</enabled></feature></config>"
+CONTENTS="&lt;config&gt;&lt;panel&gt;&lt;name&gt;AppsPanel&lt;/name&gt;&lt;visible&gt;true&lt;/visible&gt;&lt;/panel&gt;&lt;panel&gt;&lt;name&gt;FilesPanel&lt;/name&gt;&lt;masked&gt;false&lt;/masked&gt;&lt;/panel&gt;&lt;panel&gt;&lt;name&gt;MarketPanel&lt;/name&gt;&lt;masked&gt;false&lt;/masked&gt;&lt;/panel&gt;&lt;feature&gt;&lt;name&gt;SelfServeInstalls&lt;/name&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/feature&gt;&lt;feature&gt;&lt;name&gt;BrowserBasedAuthentication&lt;/name&gt;&lt;enabled&gt;false&lt;/enabled&gt;&lt;/feature&gt;&lt;feature&gt;&lt;name&gt;SelfServePluginsInstall&lt;/name&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/feature&gt;&lt;feature&gt;&lt;name&gt;AppsAutoUpdate&lt;/name&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/feature&gt;&lt;/config&gt;"
 
 mkdir /Library/Application\ Support/Adobe/OOBE
 mkdir /Library/Application\ Support/Adobe/OOBE/Configs
