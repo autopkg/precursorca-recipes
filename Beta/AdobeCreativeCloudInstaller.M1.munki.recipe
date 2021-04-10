@@ -44,6 +44,25 @@
         <string>Creative_Cloud_Installer</string>
         <key>unattended_install</key>
         <true/>
+        <key>postinstall_script</key>
+			<string>#!/bin/zsh
+
+# Script to create a serviceconfig.xml file to allow standard users to update Creative Cloud and install Apps
+
+OUTPUT_FILE="/Library/Application Support/Adobe/OOBE/Configs/ServiceConfig.xml"
+CONTENTS="<config><panel><name>AppsPanel</name><visible>true</visible></panel><panel><name>FilesPanel</name><masked>false</masked></panel><panel><name>MarketPanel</name><masked>false</masked></panel><feature><name>SelfServeInstalls</name><enabled>true</enabled></feature><feature><name>BrowserBasedAuthentication</name><enabled>false</enabled></feature><feature><name>SelfServePluginsInstall</name><enabled>true</enabled></feature><feature><name>AppsAutoUpdate</name><enabled>true</enabled></feature></config>"
+
+mkdir /Library/Application\ Support/Adobe/OOBE
+mkdir /Library/Application\ Support/Adobe/OOBE/Configs
+
+# Create ServiceConfig.xml file
+Touch $OUTPUT_FILE
+# Output data here
+echo "$CONTENTS" > ${OUTPUT_FILE}
+#END Output data
+
+exit 0
+		</string>
       </dict>
     </dict>
     <key>MinimumVersion</key>
