@@ -1,16 +1,16 @@
 #!/usr/bin/python
 
- from __future__ import absolute_import
+from __future__ import absolute_import
 
- import os.path
- import xml.etree.cElementTree as ET
+import os.path
+import xml.etree.cElementTree as ET
 
- from autopkglib import Processor, ProcessorError
+from autopkglib import Processor, ProcessorError
 
- __all__ = ['XMLReader']
+__all__ = ['XMLReader']
 
 
- class XMLReader(Processor):
+class XMLReader(Processor):
      input_variables = {
          "xml_path": {
              "required": True,
@@ -74,6 +74,6 @@
                              % (self.env[var], var))
 
 
- if __name__ == '__main__':
+if __name__ == '__main__':
      PROCESSOR = XMLReader()
      PROCESSOR.execute_shell()
