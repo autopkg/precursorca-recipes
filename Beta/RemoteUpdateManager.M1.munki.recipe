@@ -5,7 +5,7 @@
     <key>Description</key>
     <string></string>
     <key>Identifier</key>
-    <string>com.github.precursorca.munki.RemoteUpdateManager</string>
+    <string>com.github.precursorca.munki.RemoteUpdateManager.M1</string>
     <key>Input</key>
     <dict>
       <key>MUNKI_REPO_SUBDIR</key>
@@ -35,7 +35,7 @@
     <key>MinimumVersion</key>
     <string>0.4.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.moofit-recipes.pkg.RemoteUpdateManager</string>
+    <string>com.github.precursorca-recipes.pkg.RemoteUpdateManager.M1</string>
     <key>Process</key>
     <array>
       <dict>
