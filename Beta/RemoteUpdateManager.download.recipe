@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Identifier</key>
-    <string>com.github.moofit-recipes.download.RemoteUpdateManager</string>
+    <string>com.github.precursorca-recipes.download.RemoteUpdateManager</string>
     <key>Description</key>
     <string>Downloads the latest version of Adobe's RemoteUpdateManager from Adobe. The "ARCH" input variable must be
     set to either "MacIntel" or "AppleSilicon"</string>
