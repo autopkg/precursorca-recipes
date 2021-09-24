@@ -12,7 +12,7 @@
         <key>NAME</key>
         <string>Adobe RemoteUpdateManager</string>
         <key>ARCH</key>
-        <string></string>
+        <string>AppleSilicon</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.4.1</string>
