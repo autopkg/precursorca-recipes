@@ -10,7 +10,13 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Adobe RemoteUpdateManager</string>
+        <string>Adobe RemoteUpdateManager (Intel)</string>
+   		<key>VENDOR</key>
+ 		<string>Adobe</string>
+ 		<key>SOFTWARETITLE</key>
+ 		<string>Remote Update Manager</string>
+ 		<key>NAMEWITHOUTSPACES</key>
+ 		<string>RemoteUpdateManager</string>
         <key>IDENTIFIER</key>
         <string>com.adobe.RemoteUpdateManager</string>
     </dict>
@@ -83,7 +89,7 @@
                     <key>options</key>
                     <string>purge_ds_store</string>
                     <key>pkgname</key>
-                    <string>%NAME%-%version%</string>
+                    <string>%VENDOR%%NAMEWITHOUTSPACES%-%version%</string>
                     <key>pkgroot</key>
                     <string>%RECIPE_CACHE_DIR%/payload</string>
                 </dict>
