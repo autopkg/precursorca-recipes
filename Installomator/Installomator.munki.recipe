@@ -5,9 +5,9 @@
 	<key>MinimumVersion</key>
 	<string>0.2.3</string>
 	<key>Identifier</key>
-	<string>com.github.precursorca.munki.dockutil</string>
+	<string>com.github.precursorca.munki.installomator</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.precursorca.munki.dockutil</string>
+	<string>com.github.autopkg.precursorca.download.installomator</string>
 	<key>Description</key>
 	<string>Imports Installomator into Munki</string>
 	<key>Input</key>
