@@ -29,7 +29,7 @@
 			<key>category</key>
 			<string>%MUNKI_CATEGORY%</string>
 			<key>description</key>
-			<string>A client focused installer script to install the latest version of various apps.</string>
+			<string>A unified, client focused installer script for deploying and updating various apps to the latest version via MDM (Mobile Device Management).</string>
 			<key>developer</key>
 			<string>%MUNKI_DEVELOPER%</string>
 			<key>minimum_os_version</key>
