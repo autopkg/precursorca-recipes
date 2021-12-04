@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Description</key>
+    <string>Testing combination of Rich Trouton, ramyhhh, and Orchard recipes for use with CC Universal Binary</string>
+    <key>Identifier</key>
+ 	<string>com.github.precursorca.munki.AdobeCreativeCloudInstallerUniversal</string>
+    <key>Input</key>
+    <dict>
+      <key>MUNKI_REPO_SUBDIR</key>
+      <string>apps/Adobe</string>
+      <key>NAME</key>
+      <string>Creative Cloud Installer M1</string>
+      <key>pkginfo</key>
+      <dict>
+        <key>catalogs</key>
+        <array>
+          <string>testing</string>
+        </array>
+        <key>category</key>
+        <string>Creativity</string>
+        <key>description</key>
+        <string>This installs the Creative Cloud app that runs in your taskbar and allows you to install and update Creative Cloud apps.</string>
+        <key>developer</key>
+        <string>Adobe</string>
+        <key>display_name</key>
+        <string>Creative Cloud Installer</string>
+        <key>name</key>
+        <string>Creative_Cloud_Installer</string>
+        <key>unattended_install</key>
+        <true/>
+        <key>postinstall_script</key>
+			  <string>#!/bin/zsh
+
+# Script to create a serviceconfig.xml file to allow standard users to update Creative Cloud and install Apps
+
+OUTPUT_FILE="/Library/Application Support/Adobe/OOBE/Configs/ServiceConfig.xml"
+CONTENTS="&lt;config&gt;&lt;panel&gt;&lt;name&gt;AppsPanel&lt;/name&gt;&lt;visible&gt;true&lt;/visible&gt;&lt;/panel&gt;&lt;panel&gt;&lt;name&gt;FilesPanel&lt;/name&gt;&lt;masked&gt;false&lt;/masked&gt;&lt;/panel&gt;&lt;panel&gt;&lt;name&gt;MarketPanel&lt;/name&gt;&lt;masked&gt;false&lt;/masked&gt;&lt;/panel&gt;&lt;feature&gt;&lt;name&gt;SelfServeInstalls&lt;/name&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/feature&gt;&lt;feature&gt;&lt;name&gt;BrowserBasedAuthentication&lt;/name&gt;&lt;enabled&gt;false&lt;/enabled&gt;&lt;/feature&gt;&lt;feature&gt;&lt;name&gt;SelfServePluginsInstall&lt;/name&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/feature&gt;&lt;feature&gt;&lt;name&gt;AppsAutoUpdate&lt;/name&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/feature&gt;&lt;/config&gt;"
+
+mkdir /Library/Application\ Support/Adobe/OOBE
+mkdir /Library/Application\ Support/Adobe/OOBE/Configs
+
+# Create ServiceConfig.xml file
+Touch $OUTPUT_FILE
+# Output data here
+echo "$CONTENTS" > ${OUTPUT_FILE}
+#END Output data
+
+exit 0
+		  </string>
+      <key>unattended_install</key>
+			<true/>
+			<key>uninstall_method</key>
+			<string>uninstall_script</string>
+			<key>uninstall_script</key>
+			<string>#!/bin/bash
+"/Applications/Utilities/Adobe Creative Cloud/Utils/Creative Cloud Uninstaller.app/Contents/MacOS/Creative Cloud Uninstaller" -u
+</string>
+      </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.rtrouton.pkg.AdobeCreativeCloudInstallerUniversal</string>
+    <key>Process</key>
+    <array>
+      <dict>
+        <key>Arguments</key>
+        <dict>
+          <key>additional_pkginfo</key>
+          <dict>
+            <key>installs</key>
+            <array>
+              <dict>
+                <key>CFBundleName</key>
+                <string>Creative Cloud</string>
+                <key>CFBundleShortVersionString</key>
+                <string>%version%</string>
+                <key>path</key>
+                <string>/Applications/Utilities/Adobe Creative Cloud/ACC/Creative Cloud.app</string>
+                <key>type</key>
+                <string>application</string>
+                <key>version_comparison_key</key>
+                <string>CFBundleShortVersionString</string>
+              </dict>
+            </array>
+          </dict>
+        </dict>
+        <key>Processor</key>
+        <string>MunkiPkginfoMerger</string>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>MunkiImporter</string>
+        <key>Arguments</key>
+        <dict>
+          <key>pkg_path</key>
+          <string>%pkg_path%</string>
+          <key>repo_subdirectory</key>
+          <string>%MUNKI_REPO_SUBDIR%</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>
