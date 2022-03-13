@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the latest Microsoft OneDrive installer and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.precursorca.munki.microsoftonedrive</string>
+    <string>com.github.precursorca.munki.microsoftuniversalonedrive</string>
     <key>ParentRecipe</key>
     <string>com.github.rtrouton.download.microsoftuniversalonedrive</string>
     <key>Input</key>
