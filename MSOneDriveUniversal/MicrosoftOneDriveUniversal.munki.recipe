@@ -3,19 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Microsoft OneDrive Universal installer and imports into Munki.</string>
+    <string>Downloads the latest Microsoft OneDrive installer and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.precursorca.munki.microsoftuniversalonedrive</string>
+    <string>com.github.rtrouton.munki.microsoftonedrive</string>
     <key>ParentRecipe</key>
     <string>com.github.rtrouton.download.microsoftuniversalonedrive</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>OneDrive</string>
-        <key>DISPLAY_NAME</key>
-        <string>%NAME%</string>
-	<key>MUNKI_NAME</key>
-	<string>%NAME%</string>
+        <string>MicrosoftOnedrive</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/%NAME%</string>
         <key>pkginfo</key>
@@ -27,17 +23,17 @@
             <key>description</key>
             <string>Microsoft Onedrive (Universal): Enjoy the freedom to access, edit, and share your files on all your devices, wherever you are.</string>
             <key>display_name</key>
-            <string>OneDrive</string>
+            <string>Microsoft Onedrive</string>
             <key>developer</key>
             <string>Microsoft</string>
             <key>category</key>
             <string>Internet</string>
             <key>name</key>
-            <string>MUNKI_NAME</string>
+            <string>%NAME%</string>
 	    <key>unattended_install</key>
 	    <true/>
             <key>minimum_os_version</key>
-            <string>11.0.0</string>
+            <string>10.14.0</string>
         </dict>
     </dict>
     <key>MinimumVersion</key>
