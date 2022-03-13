@@ -11,9 +11,13 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>MicrosoftOneDrive</string>
+        <string>OneDrive</string>
+        <key>DISPLAY_NAME</key>
+        <string>%NAME%</string>
+		<key>MUNKI_NAME</key>
+		<string>%NAME%</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/OneDrive</string>
+        <string>apps/%NAME%</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -21,7 +25,7 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Microsoft Onedrive: Enjoy the freedom to access, edit, and share your files on all your devices, wherever you are.</string>
+            <string>Microsoft Onedrive (Universal): Enjoy the freedom to access, edit, and share your files on all your devices, wherever you are.</string>
             <key>display_name</key>
             <string>OneDrive</string>
             <key>developer</key>
