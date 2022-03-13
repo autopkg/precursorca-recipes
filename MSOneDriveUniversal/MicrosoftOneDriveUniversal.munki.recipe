@@ -11,9 +11,9 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>MicrosoftOnedrive</string>
+        <string>MicrosoftOneDrive</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/Microsoft OneDrive</string>
+        <string>apps/OneDrive</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -21,13 +21,13 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Microsoft Onedrive</string>
+            <string>Microsoft Onedrive: Enjoy the freedom to access, edit, and share your files on all your devices, wherever you are.</string>
             <key>display_name</key>
-            <string>Onedrive</string>
+            <string>OneDrive</string>
             <key>developer</key>
             <string>Microsoft</string>
             <key>category</key>
-            <string>Productivity</string>
+            <string>Internet</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>minimum_os_version</key>
