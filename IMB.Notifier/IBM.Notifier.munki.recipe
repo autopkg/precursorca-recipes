@@ -12,6 +12,31 @@
 	<dict>
 		<key>NAME</key>
 		<string>IBM Notifier</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>utilities/IBM Notifier</string>
+		<key>MUNKI_CATEGORY</key>
+		<string>Utilities</string>
+		<key>MUNKI_DEVELOPER</key>
+		<string>IBM SMartorelli</string>
+		<key>pkginfo</key>
+		<dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>description</key>
+			<string>A useful tool to system administrators to trigger interactive popups and notification banners to the end user.</string>
+			<key>developer</key>
+			<string>%MUNKI_DEVELOPER%</string>
+			<key>minimum_os_version</key>
+			<string>10.14</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
