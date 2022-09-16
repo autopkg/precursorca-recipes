@@ -53,6 +53,19 @@
         </dict>
         <dict>
             <key>Processor</key>
+            <string>com.github.homebysix.FindAndReplace/FindAndReplace</string>
+            <key>Arguments</key>
+            <dict>
+                <key>find</key>
+                <string> </string>
+                <key>input_string</key>
+                <string>%pkgroot%</string>
+                <key>replace</key>
+                <string>%20</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
             <string>URLTextSearcher</string>
             <key>Arguments</key>
             <dict>
