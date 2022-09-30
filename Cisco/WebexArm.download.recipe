@@ -15,7 +15,7 @@ AppleSilicon: https://binaries.webex.com/WebexDesktop-MACOS-Apple-Silicon-Gold/W
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>WebexArm</string>
+		<string>Webex</string>
 		<key>url</key>
 		<string>https://binaries.webex.com/WebexDesktop-MACOS-Apple-Silicon-Gold/Webex.dmg</string>
 	</dict>
@@ -27,7 +27,7 @@ AppleSilicon: https://binaries.webex.com/WebexDesktop-MACOS-Apple-Silicon-Gold/W
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%.dmg</string>
+				<string>%NAME%-ARM.dmg</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
