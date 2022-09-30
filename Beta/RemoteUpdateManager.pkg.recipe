@@ -72,7 +72,7 @@
                 <key>text_in</key>
                 <string>file://%pkgroot%/usr/local/bin/RemoteUpdateManager</string>
                 <key>re_pattern</key>
-                <string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;\s+&lt;string&gt;([\d.]+)</string>
+                <string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;</string>
                 <key>result_output_var_name</key>
                 <string>version</string>
             </dict>
