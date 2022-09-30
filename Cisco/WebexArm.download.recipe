@@ -29,7 +29,7 @@ AppleSilicon: https://binaries.webex.com/WebexDesktop-MACOS-Apple-Silicon-Gold/W
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%-ARM.dmg</string>
+				<string>%NAME%.dmg</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
