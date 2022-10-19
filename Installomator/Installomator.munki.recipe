@@ -36,6 +36,8 @@
 			<string>10.14</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>display_name</key>
+			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
