@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Empty recipe that simply uses the download recipe (as it downloads a pkg)</string>
+	<key>Identifier</key>
+	<string>com.github.autopkg.precursorca.pkg.swiftdialog</string>
+	<key>ParentRecipe</key>
+	<string>com.github.autopkg.precursorca.download.swiftdialog</string>
+	<key>Input</key>
+	<dict/>
+</dict>
+</plist>
