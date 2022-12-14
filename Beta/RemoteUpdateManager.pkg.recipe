@@ -94,7 +94,7 @@
 					<key>options</key>
 					<string>purge_ds_store</string>
 					<key>pkgname</key>
-                    <string>%VENDOR%%NAMEWITHOUTSPACES%-%version%</string>
+					<string>%VENDOR%%NAMEWITHOUTSPACES%-%version%</string>
 					<key>pkgroot</key>
 					<string>%RECIPE_CACHE_DIR%/payload</string>
 				</dict>
