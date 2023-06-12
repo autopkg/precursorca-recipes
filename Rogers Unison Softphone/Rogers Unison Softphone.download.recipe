@@ -5,7 +5,7 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Rogers Unison Softphone.</string>
+	<string>Downloads the latest version of Rogers Business Softphone.</string>
 	<key>Identifier</key>
 	<string>com.github.precursorca.download.RogersUnisonSoftphone</string>
 	<key>Input</key>
@@ -47,7 +47,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%pathname%/Rogers Unison Softphone.app/Contents/Info.plist</string>
+				<string>%pathname%/Rogers Business Softphone.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
