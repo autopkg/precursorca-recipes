@@ -5,7 +5,7 @@
       <key>Description</key>
       <string>Downloads Kerio Connect Client Client</string>
       <key>Identifier</key>
-      <string>com.github.peetinc.munki.KerioConnectClient</string>
+      <string>com.github.precursorca.munki.KerioConnect</string>
       <key>Input</key>
       <dict>
          <key>NAME</key>
