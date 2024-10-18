@@ -9,7 +9,7 @@
       <key>Input</key>
       <dict>
          <key>NAME</key>
-         <string>KerioConnect</string>
+         <string>Kerio Connect</string>
          <key>MUNKI_REPO_SUBDIR</key>
          <string>apps/Kerio</string>
          <key>DEVELOPER</key>
