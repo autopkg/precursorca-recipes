@@ -7,8 +7,8 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Webex.
 Input "url" can be one of two:
-Intel: https://binaries.webex.com/WebexTeamsDesktop-MACOS-Gold/Webex.dmg
-AppleSilicon: https://binaries.webex.com/WebexDesktop-MACOS-Apple-Silicon-Gold/Webex.dmg
+Intel: https://binaries.webex.com/webex-macos-intel/Webex.dmg
+AppleSilicon: https://binaries.webex.com/webex-macos-apple-silicon/Webex.dmg
 	</string>
 	<key>Identifier</key>
 	<string>com.github.precursorca.download.Webex</string>
@@ -17,7 +17,7 @@ AppleSilicon: https://binaries.webex.com/WebexDesktop-MACOS-Apple-Silicon-Gold/W
 		<key>NAME</key>
 		<string>Webex</string>
 		<key>url</key>
-		<string>https://binaries.webex.com/WebexTeamsDesktop-MACOS-Gold/Webex.dmg</string>
+		<string>https://binaries.webex.com/webex-macos-intel/Webex.dmg</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
