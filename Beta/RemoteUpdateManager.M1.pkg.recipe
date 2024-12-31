@@ -23,7 +23,7 @@
     <key>MinimumVersion</key>
     <string>0.4.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.precursorca.download.RemoteUpdateManager</string>
+    <string>com.github.precursorca.download.RemoteUpdateManager.M1</string>
     <key>Process</key>
 	<array>
 		<dict>
