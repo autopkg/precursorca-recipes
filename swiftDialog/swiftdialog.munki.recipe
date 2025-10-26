@@ -7,7 +7,7 @@
 	<key>Identifier</key>
 	<string>com.github.precursorca.munki.swiftdialog</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.precursorca.download.swiftdialog</string>
+	<string>com.github.zentralpro.download.swiftDialog</string>
 	<key>Description</key>
 	<string>Imports swiftDialog into Munki</string>
 	<key>Input</key>

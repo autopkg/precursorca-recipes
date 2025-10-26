@@ -7,7 +7,7 @@
 	<key>Identifier</key>
 	<string>com.github.autopkg.precursorca.pkg.swiftdialog</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.precursorca.download.swiftdialog</string>
+	<string>com.github.zentralpro.download.swiftDialog</string>
 	<key>Input</key>
 	<dict/>
 </dict>
