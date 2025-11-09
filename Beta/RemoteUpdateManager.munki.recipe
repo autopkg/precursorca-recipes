@@ -39,7 +39,7 @@
     <key>MinimumVersion</key>
     <string>0.4.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.precursorca.pkg.RemoteUpdateManager</string>
+    <string>com.github.moofit-recipes.download.RemoteUpdateManager</string>
     <key>Process</key>
     <array>
       <dict>
