@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Imports Dangerzone (Apple Silicon) into Munki.</string>
+    <key>Identifier</key>
+    <string>ca.precursor.munki.Dangerzone-arm64</string>
+    <key>ParentRecipe</key>
+    <string>ca.precursor.pkg.Dangerzone-arm64</string>
+    <key>MinimumVersion</key>
+    <string>1.0.0</string>
+
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Dangerzone</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps/dangerzone</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>name</key>
+            <string>Dangerzone-arm64</string>
+            <key>display_name</key>
+            <string>Dangerzone (Apple Silicon)</string>
+            <key>description</key>
+            <string>Dangerzone converts potentially dangerous documents into safe PDFs by sanitizing them in a secure sandbox.</string>
+            <key>developer</key>
+            <string>Freedom of the Press Foundation</string>
+            <key>category</key>
+            <string>Security</string>
+            <key>supported_architectures</key>
+            <array>
+                <string>arm64</string>
+            </array>
+            <key>blocking_applications</key>
+            <array>
+                <string>Dangerzone</string>
+            </array>
+            <key>unattended_install</key>
+            <true/>
+            <key>unattended_uninstall</key>
+            <true/>
+        </dict>
+    </dict>
+
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pkg_path%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
