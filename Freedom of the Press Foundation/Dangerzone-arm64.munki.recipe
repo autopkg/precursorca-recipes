@@ -21,7 +21,7 @@
         <key>pkginfo</key>
         <dict>
             <key>name</key>
-            <string>Dangerzone-arm64</string>
+            <string>Dangerzone</string>
             <key>display_name</key>
             <string>Dangerzone (Apple Silicon)</string>
             <key>description</key>
