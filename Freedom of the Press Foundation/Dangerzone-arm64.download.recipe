@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest Dangerzone release from GitHub (Apple Silicon).</string>
+    <key>Identifier</key>
+    <string>ca.precursor.download.Dangerzone-arm64</string>
+    <key>MinimumVersion</key>
+    <string>1.0.0</string>
+
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Dangerzone</string>
+        <key>GITHUB_REPO</key>
+        <string>freedomofpress/dangerzone</string>
+        <key>ASSET_REGEX</key>
+        <string>Dangerzone-.*-arm64\.dmg</string>
+    </dict>
+
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>GitHubReleasesInfoProvider</string>
+            <key>Arguments</key>
+            <dict>
+                <key>github_repo</key>
+                <string>%GITHUB_REPO%</string>
+                <key>asset_regex</key>
+                <string>%ASSET_REGEX%</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%url%</string>
+                <key>filename</key>
+                <string>%NAME%-%version%-arm64.dmg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
+    <key>Processor</key>
+    <string>CodeSignatureVerifier</string>
+    <key>Arguments</key>
+    <dict>
+        <key>input_path</key>
+        <string>%pathname%/Dangerzone.app</string>
+        <key>requirement</key>
+        <string>anchor apple generic and certificate leaf[subject.OU] = "94ZZGGGJ3W"</string>
+    </dict>
+</dict>
+    </array>
+</dict>
+</plist>
